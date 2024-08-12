@@ -1,0 +1,1861 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="8/12/2024 9:43:34 AM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="DESKTOP-K8M91Q3"
+  DTS:CreatorName="DESKTOP-K8M91Q3\sousa"
+  DTS:DTSID="{DFA1B766-83C5-4EA9-A937-CDFDC875F12B}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="16.0.5397.1"
+  DTS:LocaleID="1046"
+  DTS:ObjectName="LoadMusic"
+  DTS:PackageType="5"
+  DTS:VersionBuild="21"
+  DTS:VersionGUID="{707533EC-284C-4E49-9F95-CE8E28615770}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DATASET]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{64FA33C0-A4A7-4E92-A91D-5D34DEB9C0F3}"
+      DTS:ObjectName="DATASET">
+      <DTS:PropertyExpression
+        DTS:Name="ConnectionString">@[User::FilePath]</DTS:PropertyExpression>
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1046"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x0022_"
+          DTS:CodePage="1252">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="artist"
+              DTS:DTSID="{A36A3F76-FF7B-43A7-A287-42C8EF1D7AD6}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="auth"
+              DTS:DTSID="{BCB41469-5162-4B7F-87CF-E9D7CF130511}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="firstName"
+              DTS:DTSID="{2CA4F1E4-C87B-415D-A451-4474AAE412DF}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="gender"
+              DTS:DTSID="{4D063942-7B81-4426-8032-F6AEF71B2498}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="itemInSession"
+              DTS:DTSID="{3A286DAE-D7DF-4E8C-9CB2-43990384A44B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="lastName"
+              DTS:DTSID="{4D3077C9-818C-47C3-B86F-090A1DBCAAA0}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="length"
+              DTS:DTSID="{16509A2F-5072-4E4C-A87F-8753B347D601}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="level"
+              DTS:DTSID="{24BE84F4-FBB1-4DEF-AA5E-48E7785FA0AB}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="location"
+              DTS:DTSID="{2DE6E656-E30C-45A9-B733-B51EAFB2C492}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="method"
+              DTS:DTSID="{7CD19B67-1CFA-4A9C-B6E7-B2EDF35EFFEA}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="page"
+              DTS:DTSID="{74C65CED-1DD7-4663-92B3-C3181EF1A105}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="registration"
+              DTS:DTSID="{A536C5F7-678F-49E7-A696-92358B73B468}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="sessionId"
+              DTS:DTSID="{7C4DBF2A-E260-4D90-9300-4A9C2529098D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="song"
+              DTS:DTSID="{E5F64488-1EF3-4C49-B4A6-2884B3C7F900}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="status"
+              DTS:DTSID="{204D1117-45C8-411F-B0F5-80816E96EA07}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ts"
+              DTS:DTSID="{948AF210-53C5-4172-9B68-E9A13EA886C3}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="userId"
+              DTS:DTSID="{16D0F3F9-7C68-4EFA-A0EB-2574C1E340AD}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[LOCALHOST]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{67FAE0E7-3768-426A-B5D4-A57FBC99C58E}"
+      DTS:ObjectName="LOCALHOST">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=localhost\AW_SQL_2022;Initial Catalog=Music_ETL;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-LoadMusic-{67FAE0E7-3768-426A-B5D4-A57FBC99C58E}localhost\AW_SQL_2022.Music_ETL;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{12D3CDED-0CF3-47C2-8953-9B42F2D68A96}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="ContagemLinhas">
+      <DTS:VariableValue
+        DTS:DataType="3">0</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{F8663D25-ED61-4A65-A5D4-42EFBCFA685C}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="FilePath">
+      <DTS:VariableValue
+        DTS:DataType="8"
+        xml:space="preserve"></DTS:VariableValue>
+    </DTS:Variable>
+  </DTS:Variables>
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Iterar com os arquivos disponíveis"
+      DTS:CreationName="STOCK:FOREACHLOOP"
+      DTS:Description="Contêiner do Loop Foreach"
+      DTS:DTSID="{7858CFE2-A2AE-42FB-B531-5A7C586457F2}"
+      DTS:ExecutableType="STOCK:FOREACHLOOP"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Iterar com os arquivos disponíveis">
+      <DTS:ForEachEnumerator
+        DTS:CreationName="Microsoft.ForEachFileEnumerator"
+        DTS:DTSID="{C3D50278-190E-40F1-A501-4357884DB1C9}"
+        DTS:ObjectName="{C3D50278-190E-40F1-A501-4357884DB1C9}">
+        <DTS:ObjectData>
+          <ForEachFileEnumeratorProperties>
+            <FEFEProperty
+              Folder="O:\GIT\DataPipelines\DadosCSV" />
+            <FEFEProperty
+              FileSpec="*.csv" />
+            <FEFEProperty
+              FileNameRetrievalType="0" />
+            <FEFEProperty
+              Recurse="0" />
+          </ForEachFileEnumeratorProperties>
+        </DTS:ObjectData>
+      </DTS:ForEachEnumerator>
+      <DTS:Variables />
+      <DTS:Executables>
+        <DTS:Executable
+          DTS:refId="Package\Iterar com os arquivos disponíveis\Transferir Dados"
+          DTS:CreationName="Microsoft.Pipeline"
+          DTS:Description="Tarefa Fluxo de Dados"
+          DTS:DTSID="{FF9D831E-BCEE-406F-BEA2-2AD9D89A7DE2}"
+          DTS:ExecutableType="Microsoft.Pipeline"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Transferir Dados"
+          DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <pipeline
+              version="1">
+              <components>
+                <component
+                  refId="Package\Iterar com os arquivos disponíveis\Transferir Dados\Classificar"
+                  componentClassID="Microsoft.Sort"
+                  contactInfo="Classificar;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos os Direitos Reservados; http://www.microsoft.com/sql/support;1"
+                  description="Classifica os dados de entrada em ordem crescente ou decrescente quando eles não podem ser classificados em sua origem. Por exemplo, classifique dados de vendas por 'customer id' antes de eles serem gravados em um arquivo simples e entregues a outro departamento. Observação: essa transformação não é recomendável para fluxos de dados grandes."
+                  name="Classificar"
+                  version="1">
+                  <properties>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indica se a transformação Classificação remove linhas com valores de classificação duplicados."
+                      name="EliminateDuplicates">true</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Especifica o número máximo de threads a usar para classificação."
+                      expressionType="Notify"
+                      name="MaximumThreads">-1</property>
+                  </properties>
+                  <inputs>
+                    <input
+                      refId="Package\Iterar com os arquivos disponíveis\Transferir Dados\Classificar.Inputs[Classificar Entrada]"
+                      name="Classificar Entrada">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\Iterar com os arquivos disponíveis\Transferir Dados\Classificar.Inputs[Classificar Entrada].Columns[artist]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="500"
+                          cachedName="artist"
+                          lineageId="Package\Iterar com os arquivos disponíveis\Transferir Dados\DATASET.Outputs[Saída de Origem de Arquivo Simples].Columns[artist]">
+                          <properties>
+                            <property
+                              dataType="System.Int32"
+                              description="Especifica as opções de comparação para os dados de caractere."
+                              name="NewComparisonFlags">131075</property>
+                            <property
+                              dataType="System.Int32"
+                              description="Especifica a ordem de classificação da coluna."
+                              name="NewSortKeyPosition">1</property>
+                          </properties>
+                        </inputColumn>
+                        <inputColumn
+                          refId="Package\Iterar com os arquivos disponíveis\Transferir Dados\Classificar.Inputs[Classificar Entrada].Columns[firstName]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="firstName"
+                          lineageId="Package\Iterar com os arquivos disponíveis\Transferir Dados\DATASET.Outputs[Saída de Origem de Arquivo Simples].Columns[firstName]">
+                          <properties>
+                            <property
+                              dataType="System.Int32"
+                              description="Especifica as opções de comparação para os dados de caractere."
+                              name="NewComparisonFlags">0</property>
+                            <property
+                              dataType="System.Int32"
+                              description="Especifica a ordem de classificação da coluna."
+                              name="NewSortKeyPosition">0</property>
+                          </properties>
+                        </inputColumn>
+                        <inputColumn
+                          refId="Package\Iterar com os arquivos disponíveis\Transferir Dados\Classificar.Inputs[Classificar Entrada].Columns[gender]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="gender"
+                          lineageId="Package\Iterar com os arquivos disponíveis\Transferir Dados\DATASET.Outputs[Saída de Origem de Arquivo Simples].Columns[gender]">
+                          <properties>
+                            <property
+                              dataType="System.Int32"
+                              description="Especifica as opções de comparação para os dados de caractere."
+                              name="NewComparisonFlags">0</property>
+                            <property
+                              dataType="System.Int32"
+                              description="Especifica a ordem de classificação da coluna."
+                              name="NewSortKeyPosition">0</property>
+                          </properties>
+                        </inputColumn>
+                        <inputColumn
+                          refId="Package\Iterar com os arquivos disponíveis\Transferir Dados\Classificar.Inputs[Classificar Entrada].Columns[lastName]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="lastName"
+                          lineageId="Package\Iterar com os arquivos disponíveis\Transferir Dados\DATASET.Outputs[Saída de Origem de Arquivo Simples].Columns[lastName]">
+                          <properties>
+                            <property
+                              dataType="System.Int32"
+                              description="Especifica as opções de comparação para os dados de caractere."
+                              name="NewComparisonFlags">0</property>
+                            <property
+                              dataType="System.Int32"
+                              description="Especifica a ordem de classificação da coluna."
+                              name="NewSortKeyPosition">0</property>
+                          </properties>
+                        </inputColumn>
+                        <inputColumn
+                          refId="Package\Iterar com os arquivos disponíveis\Transferir Dados\Classificar.Inputs[Classificar Entrada].Columns[location]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="500"
+                          cachedName="location"
+                          lineageId="Package\Iterar com os arquivos disponíveis\Transferir Dados\DATASET.Outputs[Saída de Origem de Arquivo Simples].Columns[location]">
+                          <properties>
+                            <property
+                              dataType="System.Int32"
+                              description="Especifica as opções de comparação para os dados de caractere."
+                              name="NewComparisonFlags">0</property>
+                            <property
+                              dataType="System.Int32"
+                              description="Especifica a ordem de classificação da coluna."
+                              name="NewSortKeyPosition">0</property>
+                          </properties>
+                        </inputColumn>
+                        <inputColumn
+                          refId="Package\Iterar com os arquivos disponíveis\Transferir Dados\Classificar.Inputs[Classificar Entrada].Columns[song]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="500"
+                          cachedName="song"
+                          lineageId="Package\Iterar com os arquivos disponíveis\Transferir Dados\DATASET.Outputs[Saída de Origem de Arquivo Simples].Columns[song]">
+                          <properties>
+                            <property
+                              dataType="System.Int32"
+                              description="Especifica as opções de comparação para os dados de caractere."
+                              name="NewComparisonFlags">0</property>
+                            <property
+                              dataType="System.Int32"
+                              description="Especifica a ordem de classificação da coluna."
+                              name="NewSortKeyPosition">0</property>
+                          </properties>
+                        </inputColumn>
+                      </inputColumns>
+                      <externalMetadataColumns />
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\Iterar com os arquivos disponíveis\Transferir Dados\Classificar.Outputs[Classificar Saída]"
+                      isSorted="true"
+                      name="Classificar Saída">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Iterar com os arquivos disponíveis\Transferir Dados\Classificar.Outputs[Classificar Saída].Columns[artist]"
+                          codePage="1252"
+                          comparisonFlags="131075"
+                          dataType="str"
+                          length="500"
+                          lineageId="Package\Iterar com os arquivos disponíveis\Transferir Dados\Classificar.Outputs[Classificar Saída].Columns[artist]"
+                          name="artist"
+                          sortKeyPosition="1">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              description="Especifica o identificador de linhagem da coluna de entrada associada à coluna de saída."
+                              name="SortColumnId">#{Package\Iterar com os arquivos disponíveis\Transferir Dados\DATASET.Outputs[Saída de Origem de Arquivo Simples].Columns[artist]}</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Iterar com os arquivos disponíveis\Transferir Dados\Classificar.Outputs[Classificar Saída].Columns[firstName]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          lineageId="Package\Iterar com os arquivos disponíveis\Transferir Dados\Classificar.Outputs[Classificar Saída].Columns[firstName]"
+                          name="firstName">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              description="Especifica o identificador de linhagem da coluna de entrada associada à coluna de saída."
+                              name="SortColumnId">#{Package\Iterar com os arquivos disponíveis\Transferir Dados\DATASET.Outputs[Saída de Origem de Arquivo Simples].Columns[firstName]}</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Iterar com os arquivos disponíveis\Transferir Dados\Classificar.Outputs[Classificar Saída].Columns[gender]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          lineageId="Package\Iterar com os arquivos disponíveis\Transferir Dados\Classificar.Outputs[Classificar Saída].Columns[gender]"
+                          name="gender">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              description="Especifica o identificador de linhagem da coluna de entrada associada à coluna de saída."
+                              name="SortColumnId">#{Package\Iterar com os arquivos disponíveis\Transferir Dados\DATASET.Outputs[Saída de Origem de Arquivo Simples].Columns[gender]}</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Iterar com os arquivos disponíveis\Transferir Dados\Classificar.Outputs[Classificar Saída].Columns[lastName]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          lineageId="Package\Iterar com os arquivos disponíveis\Transferir Dados\Classificar.Outputs[Classificar Saída].Columns[lastName]"
+                          name="lastName">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              description="Especifica o identificador de linhagem da coluna de entrada associada à coluna de saída."
+                              name="SortColumnId">#{Package\Iterar com os arquivos disponíveis\Transferir Dados\DATASET.Outputs[Saída de Origem de Arquivo Simples].Columns[lastName]}</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Iterar com os arquivos disponíveis\Transferir Dados\Classificar.Outputs[Classificar Saída].Columns[location]"
+                          codePage="1252"
+                          dataType="str"
+                          length="500"
+                          lineageId="Package\Iterar com os arquivos disponíveis\Transferir Dados\Classificar.Outputs[Classificar Saída].Columns[location]"
+                          name="location">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              description="Especifica o identificador de linhagem da coluna de entrada associada à coluna de saída."
+                              name="SortColumnId">#{Package\Iterar com os arquivos disponíveis\Transferir Dados\DATASET.Outputs[Saída de Origem de Arquivo Simples].Columns[location]}</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Iterar com os arquivos disponíveis\Transferir Dados\Classificar.Outputs[Classificar Saída].Columns[song]"
+                          codePage="1252"
+                          dataType="str"
+                          length="500"
+                          lineageId="Package\Iterar com os arquivos disponíveis\Transferir Dados\Classificar.Outputs[Classificar Saída].Columns[song]"
+                          name="song">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              description="Especifica o identificador de linhagem da coluna de entrada associada à coluna de saída."
+                              name="SortColumnId">#{Package\Iterar com os arquivos disponíveis\Transferir Dados\DATASET.Outputs[Saída de Origem de Arquivo Simples].Columns[song]}</property>
+                          </properties>
+                        </outputColumn>
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\Iterar com os arquivos disponíveis\Transferir Dados\Coluna Derivada"
+                  componentClassID="Microsoft.DerivedColumn"
+                  contactInfo="Coluna Derivada;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos os Direitos Reservados; http://www.microsoft.com/sql/support;0"
+                  description="Cria novos valores de coluna aplicando expressões a colunas de entrada da transformação. Crie novas colunas ou substitua as existentes. Por exemplo, concatene os valores das colunas 'first name' e 'last name' para formar uma coluna 'full name'."
+                  name="Coluna Derivada"
+                  usesDispositions="true">
+                  <inputs>
+                    <input
+                      refId="Package\Iterar com os arquivos disponíveis\Transferir Dados\Coluna Derivada.Inputs[Entrada de Coluna Derivada]"
+                      description="Entrada para a Transformação Coluna Derivada"
+                      name="Entrada de Coluna Derivada">
+                      <externalMetadataColumns />
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\Iterar com os arquivos disponíveis\Transferir Dados\Coluna Derivada.Outputs[Saída de Coluna Derivada]"
+                      description="Saída Padrão da Transformação Coluna Derivada"
+                      exclusionGroup="1"
+                      name="Saída de Coluna Derivada"
+                      synchronousInputId="Package\Iterar com os arquivos disponíveis\Transferir Dados\Coluna Derivada.Inputs[Entrada de Coluna Derivada]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Iterar com os arquivos disponíveis\Transferir Dados\Coluna Derivada.Outputs[Saída de Coluna Derivada].Columns[NomeUsuario]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Computação"
+                          errorRowDisposition="FailComponent"
+                          length="21"
+                          lineageId="Package\Iterar com os arquivos disponíveis\Transferir Dados\Coluna Derivada.Outputs[Saída de Coluna Derivada].Columns[NomeUsuario]"
+                          name="NomeUsuario"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.String"
+                              description="Expressão de Coluna Derivada"
+                              name="Expression">@[System::UserName]</property>
+                            <property
+                              containsID="true"
+                              dataType="System.String"
+                              description="Expressão Amigável de Coluna Derivada"
+                              expressionType="Notify"
+                              name="FriendlyExpression">@[System::UserName]</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Iterar com os arquivos disponíveis\Transferir Dados\Coluna Derivada.Outputs[Saída de Coluna Derivada].Columns[DataCriacao]"
+                          dataType="date"
+                          errorOrTruncationOperation="Computação"
+                          errorRowDisposition="FailComponent"
+                          lineageId="Package\Iterar com os arquivos disponíveis\Transferir Dados\Coluna Derivada.Outputs[Saída de Coluna Derivada].Columns[DataCriacao]"
+                          name="DataCriacao"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.String"
+                              description="Expressão de Coluna Derivada"
+                              name="Expression">@[System::CreationDate]</property>
+                            <property
+                              containsID="true"
+                              dataType="System.String"
+                              description="Expressão Amigável de Coluna Derivada"
+                              expressionType="Notify"
+                              name="FriendlyExpression">@[System::CreationDate]</property>
+                          </properties>
+                        </outputColumn>
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                    <output
+                      refId="Package\Iterar com os arquivos disponíveis\Transferir Dados\Coluna Derivada.Outputs[Saída de Erro de Coluna Derivada]"
+                      description="Saída de Erro da Transformação Coluna Derivada"
+                      exclusionGroup="1"
+                      isErrorOut="true"
+                      name="Saída de Erro de Coluna Derivada"
+                      synchronousInputId="Package\Iterar com os arquivos disponíveis\Transferir Dados\Coluna Derivada.Inputs[Entrada de Coluna Derivada]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Iterar com os arquivos disponíveis\Transferir Dados\Coluna Derivada.Outputs[Saída de Erro de Coluna Derivada].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Iterar com os arquivos disponíveis\Transferir Dados\Coluna Derivada.Outputs[Saída de Erro de Coluna Derivada].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Iterar com os arquivos disponíveis\Transferir Dados\Coluna Derivada.Outputs[Saída de Erro de Coluna Derivada].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Iterar com os arquivos disponíveis\Transferir Dados\Coluna Derivada.Outputs[Saída de Erro de Coluna Derivada].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\Iterar com os arquivos disponíveis\Transferir Dados\Contagem de Linhas"
+                  componentClassID="Microsoft.RowCount"
+                  contactInfo="Contagem de Linhas;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos os Direitos Reservados; http://www.microsoft.com/sql/support;0"
+                  description="Conta as linhas à medida que elas passam por um fluxo de dados. Por exemplo, use o número de linhas processado para determinar se operações de limpeza devem ser executadas ou não, ou atualize o texto em uma mensagem de email para comunicar o status de processamento."
+                  name="Contagem de Linhas">
+                  <properties>
+                    <property
+                      dataType="System.String"
+                      description="Especifica a variável que conterá a contagem de linhas."
+                      name="VariableName">User::ContagemLinhas</property>
+                  </properties>
+                  <inputs>
+                    <input
+                      refId="Package\Iterar com os arquivos disponíveis\Transferir Dados\Contagem de Linhas.Inputs[Contagem de Linhas Entrada 1]"
+                      hasSideEffects="true"
+                      name="Contagem de Linhas Entrada 1">
+                      <externalMetadataColumns />
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\Iterar com os arquivos disponíveis\Transferir Dados\Contagem de Linhas.Outputs[Contagem de Linhas Saída 1]"
+                      name="Contagem de Linhas Saída 1"
+                      synchronousInputId="Package\Iterar com os arquivos disponíveis\Transferir Dados\Contagem de Linhas.Inputs[Contagem de Linhas Entrada 1]">
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\Iterar com os arquivos disponíveis\Transferir Dados\DATASET"
+                  componentClassID="Microsoft.FlatFileSource"
+                  contactInfo="Origem de Arquivo Simples;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos os Direitos Reservados; http://www.microsoft.com/sql/support;1"
+                  description="Origem de Arquivo Simples"
+                  localeId="1046"
+                  name="DATASET"
+                  usesDispositions="true"
+                  version="1">
+                  <properties>
+                    <property
+                      dataType="System.Boolean"
+                      description="Especifica se colunas de comprimento zero são tratadas como nulas."
+                      name="RetainNulls">false</property>
+                    <property
+                      dataType="System.String"
+                      description="Especifica o nome de uma coluna de saída que contém o nome do arquivo. Se nenhum nome for especificado, nenhuma coluna de saída contendo o nome de arquivo será gerada."
+                      name="FileNameColumnName"></property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Iterar com os arquivos disponíveis\Transferir Dados\DATASET.Connections[FlatFileConnection]"
+                      connectionManagerID="Package.ConnectionManagers[DATASET]"
+                      connectionManagerRefId="Package.ConnectionManagers[DATASET]"
+                      name="FlatFileConnection" />
+                  </connections>
+                  <outputs>
+                    <output
+                      refId="Package\Iterar com os arquivos disponíveis\Transferir Dados\DATASET.Outputs[Saída de Origem de Arquivo Simples]"
+                      name="Saída de Origem de Arquivo Simples">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Iterar com os arquivos disponíveis\Transferir Dados\DATASET.Outputs[Saída de Origem de Arquivo Simples].Columns[artist]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversão"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Iterar com os arquivos disponíveis\Transferir Dados\DATASET.Outputs[Saída de Origem de Arquivo Simples].ExternalColumns[artist]"
+                          length="500"
+                          lineageId="Package\Iterar com os arquivos disponíveis\Transferir Dados\DATASET.Outputs[Saída de Origem de Arquivo Simples].Columns[artist]"
+                          name="artist"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indica se a coluna usa as rotinas de análise de localidade neutro mais rápidas."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indica se os dados estão em formato binário."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Iterar com os arquivos disponíveis\Transferir Dados\DATASET.Outputs[Saída de Origem de Arquivo Simples].Columns[auth]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversão"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Iterar com os arquivos disponíveis\Transferir Dados\DATASET.Outputs[Saída de Origem de Arquivo Simples].ExternalColumns[auth]"
+                          length="50"
+                          lineageId="Package\Iterar com os arquivos disponíveis\Transferir Dados\DATASET.Outputs[Saída de Origem de Arquivo Simples].Columns[auth]"
+                          name="auth"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indica se a coluna usa as rotinas de análise de localidade neutro mais rápidas."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indica se os dados estão em formato binário."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Iterar com os arquivos disponíveis\Transferir Dados\DATASET.Outputs[Saída de Origem de Arquivo Simples].Columns[firstName]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversão"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Iterar com os arquivos disponíveis\Transferir Dados\DATASET.Outputs[Saída de Origem de Arquivo Simples].ExternalColumns[firstName]"
+                          length="50"
+                          lineageId="Package\Iterar com os arquivos disponíveis\Transferir Dados\DATASET.Outputs[Saída de Origem de Arquivo Simples].Columns[firstName]"
+                          name="firstName"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indica se a coluna usa as rotinas de análise de localidade neutro mais rápidas."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indica se os dados estão em formato binário."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Iterar com os arquivos disponíveis\Transferir Dados\DATASET.Outputs[Saída de Origem de Arquivo Simples].Columns[gender]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversão"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Iterar com os arquivos disponíveis\Transferir Dados\DATASET.Outputs[Saída de Origem de Arquivo Simples].ExternalColumns[gender]"
+                          length="50"
+                          lineageId="Package\Iterar com os arquivos disponíveis\Transferir Dados\DATASET.Outputs[Saída de Origem de Arquivo Simples].Columns[gender]"
+                          name="gender"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indica se a coluna usa as rotinas de análise de localidade neutro mais rápidas."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indica se os dados estão em formato binário."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Iterar com os arquivos disponíveis\Transferir Dados\DATASET.Outputs[Saída de Origem de Arquivo Simples].Columns[itemInSession]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversão"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Iterar com os arquivos disponíveis\Transferir Dados\DATASET.Outputs[Saída de Origem de Arquivo Simples].ExternalColumns[itemInSession]"
+                          length="50"
+                          lineageId="Package\Iterar com os arquivos disponíveis\Transferir Dados\DATASET.Outputs[Saída de Origem de Arquivo Simples].Columns[itemInSession]"
+                          name="itemInSession"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indica se a coluna usa as rotinas de análise de localidade neutro mais rápidas."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indica se os dados estão em formato binário."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Iterar com os arquivos disponíveis\Transferir Dados\DATASET.Outputs[Saída de Origem de Arquivo Simples].Columns[lastName]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversão"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Iterar com os arquivos disponíveis\Transferir Dados\DATASET.Outputs[Saída de Origem de Arquivo Simples].ExternalColumns[lastName]"
+                          length="50"
+                          lineageId="Package\Iterar com os arquivos disponíveis\Transferir Dados\DATASET.Outputs[Saída de Origem de Arquivo Simples].Columns[lastName]"
+                          name="lastName"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indica se a coluna usa as rotinas de análise de localidade neutro mais rápidas."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indica se os dados estão em formato binário."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Iterar com os arquivos disponíveis\Transferir Dados\DATASET.Outputs[Saída de Origem de Arquivo Simples].Columns[length]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversão"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Iterar com os arquivos disponíveis\Transferir Dados\DATASET.Outputs[Saída de Origem de Arquivo Simples].ExternalColumns[length]"
+                          length="50"
+                          lineageId="Package\Iterar com os arquivos disponíveis\Transferir Dados\DATASET.Outputs[Saída de Origem de Arquivo Simples].Columns[length]"
+                          name="length"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indica se a coluna usa as rotinas de análise de localidade neutro mais rápidas."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indica se os dados estão em formato binário."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Iterar com os arquivos disponíveis\Transferir Dados\DATASET.Outputs[Saída de Origem de Arquivo Simples].Columns[level]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversão"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Iterar com os arquivos disponíveis\Transferir Dados\DATASET.Outputs[Saída de Origem de Arquivo Simples].ExternalColumns[level]"
+                          length="50"
+                          lineageId="Package\Iterar com os arquivos disponíveis\Transferir Dados\DATASET.Outputs[Saída de Origem de Arquivo Simples].Columns[level]"
+                          name="level"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indica se a coluna usa as rotinas de análise de localidade neutro mais rápidas."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indica se os dados estão em formato binário."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Iterar com os arquivos disponíveis\Transferir Dados\DATASET.Outputs[Saída de Origem de Arquivo Simples].Columns[location]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversão"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Iterar com os arquivos disponíveis\Transferir Dados\DATASET.Outputs[Saída de Origem de Arquivo Simples].ExternalColumns[location]"
+                          length="500"
+                          lineageId="Package\Iterar com os arquivos disponíveis\Transferir Dados\DATASET.Outputs[Saída de Origem de Arquivo Simples].Columns[location]"
+                          name="location"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indica se a coluna usa as rotinas de análise de localidade neutro mais rápidas."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indica se os dados estão em formato binário."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Iterar com os arquivos disponíveis\Transferir Dados\DATASET.Outputs[Saída de Origem de Arquivo Simples].Columns[method]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversão"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Iterar com os arquivos disponíveis\Transferir Dados\DATASET.Outputs[Saída de Origem de Arquivo Simples].ExternalColumns[method]"
+                          length="50"
+                          lineageId="Package\Iterar com os arquivos disponíveis\Transferir Dados\DATASET.Outputs[Saída de Origem de Arquivo Simples].Columns[method]"
+                          name="method"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indica se a coluna usa as rotinas de análise de localidade neutro mais rápidas."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indica se os dados estão em formato binário."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Iterar com os arquivos disponíveis\Transferir Dados\DATASET.Outputs[Saída de Origem de Arquivo Simples].Columns[page]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversão"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Iterar com os arquivos disponíveis\Transferir Dados\DATASET.Outputs[Saída de Origem de Arquivo Simples].ExternalColumns[page]"
+                          length="50"
+                          lineageId="Package\Iterar com os arquivos disponíveis\Transferir Dados\DATASET.Outputs[Saída de Origem de Arquivo Simples].Columns[page]"
+                          name="page"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indica se a coluna usa as rotinas de análise de localidade neutro mais rápidas."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indica se os dados estão em formato binário."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Iterar com os arquivos disponíveis\Transferir Dados\DATASET.Outputs[Saída de Origem de Arquivo Simples].Columns[registration]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversão"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Iterar com os arquivos disponíveis\Transferir Dados\DATASET.Outputs[Saída de Origem de Arquivo Simples].ExternalColumns[registration]"
+                          length="50"
+                          lineageId="Package\Iterar com os arquivos disponíveis\Transferir Dados\DATASET.Outputs[Saída de Origem de Arquivo Simples].Columns[registration]"
+                          name="registration"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indica se a coluna usa as rotinas de análise de localidade neutro mais rápidas."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indica se os dados estão em formato binário."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Iterar com os arquivos disponíveis\Transferir Dados\DATASET.Outputs[Saída de Origem de Arquivo Simples].Columns[sessionId]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversão"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Iterar com os arquivos disponíveis\Transferir Dados\DATASET.Outputs[Saída de Origem de Arquivo Simples].ExternalColumns[sessionId]"
+                          length="50"
+                          lineageId="Package\Iterar com os arquivos disponíveis\Transferir Dados\DATASET.Outputs[Saída de Origem de Arquivo Simples].Columns[sessionId]"
+                          name="sessionId"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indica se a coluna usa as rotinas de análise de localidade neutro mais rápidas."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indica se os dados estão em formato binário."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Iterar com os arquivos disponíveis\Transferir Dados\DATASET.Outputs[Saída de Origem de Arquivo Simples].Columns[song]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversão"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Iterar com os arquivos disponíveis\Transferir Dados\DATASET.Outputs[Saída de Origem de Arquivo Simples].ExternalColumns[song]"
+                          length="500"
+                          lineageId="Package\Iterar com os arquivos disponíveis\Transferir Dados\DATASET.Outputs[Saída de Origem de Arquivo Simples].Columns[song]"
+                          name="song"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indica se a coluna usa as rotinas de análise de localidade neutro mais rápidas."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indica se os dados estão em formato binário."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Iterar com os arquivos disponíveis\Transferir Dados\DATASET.Outputs[Saída de Origem de Arquivo Simples].Columns[status]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversão"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Iterar com os arquivos disponíveis\Transferir Dados\DATASET.Outputs[Saída de Origem de Arquivo Simples].ExternalColumns[status]"
+                          length="50"
+                          lineageId="Package\Iterar com os arquivos disponíveis\Transferir Dados\DATASET.Outputs[Saída de Origem de Arquivo Simples].Columns[status]"
+                          name="status"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indica se a coluna usa as rotinas de análise de localidade neutro mais rápidas."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indica se os dados estão em formato binário."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Iterar com os arquivos disponíveis\Transferir Dados\DATASET.Outputs[Saída de Origem de Arquivo Simples].Columns[ts]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversão"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Iterar com os arquivos disponíveis\Transferir Dados\DATASET.Outputs[Saída de Origem de Arquivo Simples].ExternalColumns[ts]"
+                          length="50"
+                          lineageId="Package\Iterar com os arquivos disponíveis\Transferir Dados\DATASET.Outputs[Saída de Origem de Arquivo Simples].Columns[ts]"
+                          name="ts"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indica se a coluna usa as rotinas de análise de localidade neutro mais rápidas."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indica se os dados estão em formato binário."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Iterar com os arquivos disponíveis\Transferir Dados\DATASET.Outputs[Saída de Origem de Arquivo Simples].Columns[userId]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversão"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Iterar com os arquivos disponíveis\Transferir Dados\DATASET.Outputs[Saída de Origem de Arquivo Simples].ExternalColumns[userId]"
+                          length="50"
+                          lineageId="Package\Iterar com os arquivos disponíveis\Transferir Dados\DATASET.Outputs[Saída de Origem de Arquivo Simples].Columns[userId]"
+                          name="userId"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indica se a coluna usa as rotinas de análise de localidade neutro mais rápidas."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indica se os dados estão em formato binário."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                      </outputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Iterar com os arquivos disponíveis\Transferir Dados\DATASET.Outputs[Saída de Origem de Arquivo Simples].ExternalColumns[artist]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="artist" />
+                        <externalMetadataColumn
+                          refId="Package\Iterar com os arquivos disponíveis\Transferir Dados\DATASET.Outputs[Saída de Origem de Arquivo Simples].ExternalColumns[auth]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="auth" />
+                        <externalMetadataColumn
+                          refId="Package\Iterar com os arquivos disponíveis\Transferir Dados\DATASET.Outputs[Saída de Origem de Arquivo Simples].ExternalColumns[firstName]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="firstName" />
+                        <externalMetadataColumn
+                          refId="Package\Iterar com os arquivos disponíveis\Transferir Dados\DATASET.Outputs[Saída de Origem de Arquivo Simples].ExternalColumns[gender]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="gender" />
+                        <externalMetadataColumn
+                          refId="Package\Iterar com os arquivos disponíveis\Transferir Dados\DATASET.Outputs[Saída de Origem de Arquivo Simples].ExternalColumns[itemInSession]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="itemInSession" />
+                        <externalMetadataColumn
+                          refId="Package\Iterar com os arquivos disponíveis\Transferir Dados\DATASET.Outputs[Saída de Origem de Arquivo Simples].ExternalColumns[lastName]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="lastName" />
+                        <externalMetadataColumn
+                          refId="Package\Iterar com os arquivos disponíveis\Transferir Dados\DATASET.Outputs[Saída de Origem de Arquivo Simples].ExternalColumns[length]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="length" />
+                        <externalMetadataColumn
+                          refId="Package\Iterar com os arquivos disponíveis\Transferir Dados\DATASET.Outputs[Saída de Origem de Arquivo Simples].ExternalColumns[level]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="level" />
+                        <externalMetadataColumn
+                          refId="Package\Iterar com os arquivos disponíveis\Transferir Dados\DATASET.Outputs[Saída de Origem de Arquivo Simples].ExternalColumns[location]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="location" />
+                        <externalMetadataColumn
+                          refId="Package\Iterar com os arquivos disponíveis\Transferir Dados\DATASET.Outputs[Saída de Origem de Arquivo Simples].ExternalColumns[method]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="method" />
+                        <externalMetadataColumn
+                          refId="Package\Iterar com os arquivos disponíveis\Transferir Dados\DATASET.Outputs[Saída de Origem de Arquivo Simples].ExternalColumns[page]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="page" />
+                        <externalMetadataColumn
+                          refId="Package\Iterar com os arquivos disponíveis\Transferir Dados\DATASET.Outputs[Saída de Origem de Arquivo Simples].ExternalColumns[registration]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="registration" />
+                        <externalMetadataColumn
+                          refId="Package\Iterar com os arquivos disponíveis\Transferir Dados\DATASET.Outputs[Saída de Origem de Arquivo Simples].ExternalColumns[sessionId]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="sessionId" />
+                        <externalMetadataColumn
+                          refId="Package\Iterar com os arquivos disponíveis\Transferir Dados\DATASET.Outputs[Saída de Origem de Arquivo Simples].ExternalColumns[song]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="song" />
+                        <externalMetadataColumn
+                          refId="Package\Iterar com os arquivos disponíveis\Transferir Dados\DATASET.Outputs[Saída de Origem de Arquivo Simples].ExternalColumns[status]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="status" />
+                        <externalMetadataColumn
+                          refId="Package\Iterar com os arquivos disponíveis\Transferir Dados\DATASET.Outputs[Saída de Origem de Arquivo Simples].ExternalColumns[ts]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="ts" />
+                        <externalMetadataColumn
+                          refId="Package\Iterar com os arquivos disponíveis\Transferir Dados\DATASET.Outputs[Saída de Origem de Arquivo Simples].ExternalColumns[userId]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="userId" />
+                      </externalMetadataColumns>
+                    </output>
+                    <output
+                      refId="Package\Iterar com os arquivos disponíveis\Transferir Dados\DATASET.Outputs[Saída de Erro de Origem de Arquivo Simples]"
+                      isErrorOut="true"
+                      name="Saída de Erro de Origem de Arquivo Simples">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Iterar com os arquivos disponíveis\Transferir Dados\DATASET.Outputs[Saída de Erro de Origem de Arquivo Simples].Columns[Coluna de Saída de Erro de Origem de Arquivo Simples]"
+                          codePage="1252"
+                          dataType="text"
+                          description="Coluna de Saída de Erro de Origem de Arquivo Simples"
+                          lineageId="Package\Iterar com os arquivos disponíveis\Transferir Dados\DATASET.Outputs[Saída de Erro de Origem de Arquivo Simples].Columns[Coluna de Saída de Erro de Origem de Arquivo Simples]"
+                          name="Coluna de Saída de Erro de Origem de Arquivo Simples" />
+                        <outputColumn
+                          refId="Package\Iterar com os arquivos disponíveis\Transferir Dados\DATASET.Outputs[Saída de Erro de Origem de Arquivo Simples].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Iterar com os arquivos disponíveis\Transferir Dados\DATASET.Outputs[Saída de Erro de Origem de Arquivo Simples].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Iterar com os arquivos disponíveis\Transferir Dados\DATASET.Outputs[Saída de Erro de Origem de Arquivo Simples].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Iterar com os arquivos disponíveis\Transferir Dados\DATASET.Outputs[Saída de Erro de Origem de Arquivo Simples].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\Iterar com os arquivos disponíveis\Transferir Dados\Destino Banco de Dados"
+                  componentClassID="Microsoft.OLEDBDestination"
+                  contactInfo="Destino OLE DB;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos os Direitos Reservados; http://www.microsoft.com/sql/support;4"
+                  description="Destino OLE DB"
+                  name="Destino Banco de Dados"
+                  usesDispositions="true"
+                  version="4">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="O tempo em segundos antes que um comando expire. Zero indica uma expiração infinita."
+                      name="CommandTimeout">0</property>
+                    <property
+                      dataType="System.String"
+                      description="Especifica o nome do objeto de banco de dados usado para abrir um conjunto de linhas."
+                      name="OpenRowset">[dbo].[SessionHistory]</property>
+                    <property
+                      dataType="System.String"
+                      description="Especifica a variável que contém o nome do objeto de banco de dados usado para abrir um conjunto de linhas."
+                      name="OpenRowsetVariable"></property>
+                    <property
+                      dataType="System.String"
+                      description="O comando SQL a ser executado."
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                    <property
+                      dataType="System.Int32"
+                      description="Especifica a página de código de coluna a ser usada quando não há informações de página de código disponíveis a partir da fonte de dados."
+                      name="DefaultCodePage">1252</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Forca o uso do valor da propriedade DefaultCodePage durante a descrição dos dados de caractere."
+                      name="AlwaysUseDefaultCodePage">false</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Especifica o modo usado para acessar o banco de dados."
+                      name="AccessMode"
+                      typeConverter="AccessMode">3</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indica se os valores fornecidos para colunas de identidade serão copiados no destino. Se false, os valores para colunas de identidade serão gerados automaticamente no destino. Aplicável apenas se o carregamento rápido estiver ativado."
+                      name="FastLoadKeepIdentity">false</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indica se as colunas que contêm null terão null inserido no destino. Se false, as colunas que contêm null terão seus valores padrão inseridos no destino. Aplicável apenas se o carregamento rápido estiver ativado."
+                      name="FastLoadKeepNulls">false</property>
+                    <property
+                      dataType="System.String"
+                      description="Especifica as opções a serem usadas com o carregamento rápido. Aplicável apenas se o carregamento rápido estiver ativado."
+                      name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Especifica quando confirmações são emitidas durante a inserção de dados. Um valor de 0 especifica que uma confirmação será emitida ao final da inserção de dados. Aplicável somente se o carregamento rápido estiver ativado."
+                      name="FastLoadMaxInsertCommitSize">2147483647</property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Iterar com os arquivos disponíveis\Transferir Dados\Destino Banco de Dados.Connections[OleDbConnection]"
+                      connectionManagerID="Package.ConnectionManagers[LOCALHOST]"
+                      connectionManagerRefId="Package.ConnectionManagers[LOCALHOST]"
+                      description="A conexão de tempo de execução OLE DB usada para acessar o banco de dados."
+                      name="OleDbConnection" />
+                  </connections>
+                  <inputs>
+                    <input
+                      refId="Package\Iterar com os arquivos disponíveis\Transferir Dados\Destino Banco de Dados.Inputs[Entrada de Destino OLE DB]"
+                      errorOrTruncationOperation="Inserir"
+                      errorRowDisposition="FailComponent"
+                      hasSideEffects="true"
+                      name="Entrada de Destino OLE DB">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\Iterar com os arquivos disponíveis\Transferir Dados\Destino Banco de Dados.Inputs[Entrada de Destino OLE DB].Columns[artist]"
+                          cachedCodepage="1252"
+                          cachedComparisonFlags="131075"
+                          cachedDataType="str"
+                          cachedLength="500"
+                          cachedName="artist"
+                          cachedSortKeyPosition="1"
+                          externalMetadataColumnId="Package\Iterar com os arquivos disponíveis\Transferir Dados\Destino Banco de Dados.Inputs[Entrada de Destino OLE DB].ExternalColumns[Artista]"
+                          lineageId="Package\Iterar com os arquivos disponíveis\Transferir Dados\Classificar.Outputs[Classificar Saída].Columns[artist]" />
+                        <inputColumn
+                          refId="Package\Iterar com os arquivos disponíveis\Transferir Dados\Destino Banco de Dados.Inputs[Entrada de Destino OLE DB].Columns[firstName]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="firstName"
+                          externalMetadataColumnId="Package\Iterar com os arquivos disponíveis\Transferir Dados\Destino Banco de Dados.Inputs[Entrada de Destino OLE DB].ExternalColumns[PrimeiroNome]"
+                          lineageId="Package\Iterar com os arquivos disponíveis\Transferir Dados\Classificar.Outputs[Classificar Saída].Columns[firstName]" />
+                        <inputColumn
+                          refId="Package\Iterar com os arquivos disponíveis\Transferir Dados\Destino Banco de Dados.Inputs[Entrada de Destino OLE DB].Columns[lastName]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="lastName"
+                          externalMetadataColumnId="Package\Iterar com os arquivos disponíveis\Transferir Dados\Destino Banco de Dados.Inputs[Entrada de Destino OLE DB].ExternalColumns[UltimoNome]"
+                          lineageId="Package\Iterar com os arquivos disponíveis\Transferir Dados\Classificar.Outputs[Classificar Saída].Columns[lastName]" />
+                        <inputColumn
+                          refId="Package\Iterar com os arquivos disponíveis\Transferir Dados\Destino Banco de Dados.Inputs[Entrada de Destino OLE DB].Columns[gender]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="gender"
+                          externalMetadataColumnId="Package\Iterar com os arquivos disponíveis\Transferir Dados\Destino Banco de Dados.Inputs[Entrada de Destino OLE DB].ExternalColumns[Genero]"
+                          lineageId="Package\Iterar com os arquivos disponíveis\Transferir Dados\Classificar.Outputs[Classificar Saída].Columns[gender]" />
+                        <inputColumn
+                          refId="Package\Iterar com os arquivos disponíveis\Transferir Dados\Destino Banco de Dados.Inputs[Entrada de Destino OLE DB].Columns[location]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="500"
+                          cachedName="location"
+                          externalMetadataColumnId="Package\Iterar com os arquivos disponíveis\Transferir Dados\Destino Banco de Dados.Inputs[Entrada de Destino OLE DB].ExternalColumns[Localidade]"
+                          lineageId="Package\Iterar com os arquivos disponíveis\Transferir Dados\Classificar.Outputs[Classificar Saída].Columns[location]" />
+                        <inputColumn
+                          refId="Package\Iterar com os arquivos disponíveis\Transferir Dados\Destino Banco de Dados.Inputs[Entrada de Destino OLE DB].Columns[song]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="500"
+                          cachedName="song"
+                          externalMetadataColumnId="Package\Iterar com os arquivos disponíveis\Transferir Dados\Destino Banco de Dados.Inputs[Entrada de Destino OLE DB].ExternalColumns[Musica]"
+                          lineageId="Package\Iterar com os arquivos disponíveis\Transferir Dados\Classificar.Outputs[Classificar Saída].Columns[song]" />
+                      </inputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Iterar com os arquivos disponíveis\Transferir Dados\Destino Banco de Dados.Inputs[Entrada de Destino OLE DB].ExternalColumns[ID]"
+                          dataType="i8"
+                          name="ID" />
+                        <externalMetadataColumn
+                          refId="Package\Iterar com os arquivos disponíveis\Transferir Dados\Destino Banco de Dados.Inputs[Entrada de Destino OLE DB].ExternalColumns[Artista]"
+                          codePage="1252"
+                          dataType="str"
+                          length="500"
+                          name="Artista" />
+                        <externalMetadataColumn
+                          refId="Package\Iterar com os arquivos disponíveis\Transferir Dados\Destino Banco de Dados.Inputs[Entrada de Destino OLE DB].ExternalColumns[PrimeiroNome]"
+                          codePage="1252"
+                          dataType="str"
+                          length="500"
+                          name="PrimeiroNome" />
+                        <externalMetadataColumn
+                          refId="Package\Iterar com os arquivos disponíveis\Transferir Dados\Destino Banco de Dados.Inputs[Entrada de Destino OLE DB].ExternalColumns[UltimoNome]"
+                          codePage="1252"
+                          dataType="str"
+                          length="500"
+                          name="UltimoNome" />
+                        <externalMetadataColumn
+                          refId="Package\Iterar com os arquivos disponíveis\Transferir Dados\Destino Banco de Dados.Inputs[Entrada de Destino OLE DB].ExternalColumns[Genero]"
+                          codePage="1252"
+                          dataType="str"
+                          length="1"
+                          name="Genero" />
+                        <externalMetadataColumn
+                          refId="Package\Iterar com os arquivos disponíveis\Transferir Dados\Destino Banco de Dados.Inputs[Entrada de Destino OLE DB].ExternalColumns[Localidade]"
+                          codePage="1252"
+                          dataType="str"
+                          length="500"
+                          name="Localidade" />
+                        <externalMetadataColumn
+                          refId="Package\Iterar com os arquivos disponíveis\Transferir Dados\Destino Banco de Dados.Inputs[Entrada de Destino OLE DB].ExternalColumns[Musica]"
+                          codePage="1252"
+                          dataType="str"
+                          length="500"
+                          name="Musica" />
+                      </externalMetadataColumns>
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\Iterar com os arquivos disponíveis\Transferir Dados\Destino Banco de Dados.Outputs[Saída de Erro de Destino OLE DB]"
+                      exclusionGroup="1"
+                      isErrorOut="true"
+                      name="Saída de Erro de Destino OLE DB"
+                      synchronousInputId="Package\Iterar com os arquivos disponíveis\Transferir Dados\Destino Banco de Dados.Inputs[Entrada de Destino OLE DB]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Iterar com os arquivos disponíveis\Transferir Dados\Destino Banco de Dados.Outputs[Saída de Erro de Destino OLE DB].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Iterar com os arquivos disponíveis\Transferir Dados\Destino Banco de Dados.Outputs[Saída de Erro de Destino OLE DB].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Iterar com os arquivos disponíveis\Transferir Dados\Destino Banco de Dados.Outputs[Saída de Erro de Destino OLE DB].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Iterar com os arquivos disponíveis\Transferir Dados\Destino Banco de Dados.Outputs[Saída de Erro de Destino OLE DB].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\Iterar com os arquivos disponíveis\Transferir Dados\Divisão Condicional"
+                  componentClassID="Microsoft.ConditionalSplit"
+                  contactInfo="Divisão Condicional;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos os Direitos Reservados; http://www.microsoft.com/sql/support;0"
+                  description="Encaminha colunas de dados para saídas diferentes, dependendo do conteúdo dos dados. Use condições (expressões do SSIS) para especificar quais linhas são encaminhadas. Por exemplo, separe os registros que precisam ser limpos daqueles que estão prontos para serem carregados ou encaminhe somente um subconjunto de registros."
+                  name="Divisão Condicional"
+                  usesDispositions="true">
+                  <inputs>
+                    <input
+                      refId="Package\Iterar com os arquivos disponíveis\Transferir Dados\Divisão Condicional.Inputs[Entrada de Divisão Condicional]"
+                      description="Entrada para a Transformação Divisão Condicional"
+                      name="Entrada de Divisão Condicional">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\Iterar com os arquivos disponíveis\Transferir Dados\Divisão Condicional.Inputs[Entrada de Divisão Condicional].Columns[artist]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="500"
+                          cachedName="artist"
+                          lineageId="Package\Iterar com os arquivos disponíveis\Transferir Dados\DATASET.Outputs[Saída de Origem de Arquivo Simples].Columns[artist]" />
+                      </inputColumns>
+                      <externalMetadataColumns />
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\Iterar com os arquivos disponíveis\Transferir Dados\Divisão Condicional.Outputs[EliminarBranco]"
+                      description="Saída 1 da Transformação Divisão Condicional"
+                      errorOrTruncationOperation="Computação"
+                      errorRowDisposition="FailComponent"
+                      exclusionGroup="1"
+                      name="EliminarBranco"
+                      synchronousInputId="Package\Iterar com os arquivos disponíveis\Transferir Dados\Divisão Condicional.Inputs[Entrada de Divisão Condicional]"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Especifica a expressão. Essa versão da expressão usa identificadores de linhagem, em vez de nomes de colunas."
+                          name="Expression">#{Package\Iterar com os arquivos disponíveis\Transferir Dados\DATASET.Outputs[Saída de Origem de Arquivo Simples].Columns[artist]} != ""</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Especifica a versão amigável da expressão. Essa versão de expressão usa nomes de colunas."
+                          expressionType="Notify"
+                          name="FriendlyExpression">artist != ""</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica a posição da condição na lista de condições que a transformação avalia. A ordem de avaliação é do menor para o maior valor."
+                          name="EvaluationOrder">0</property>
+                      </properties>
+                      <externalMetadataColumns />
+                    </output>
+                    <output
+                      refId="Package\Iterar com os arquivos disponíveis\Transferir Dados\Divisão Condicional.Outputs[Saída Padrão de Divisão Condicional]"
+                      description="Saída Padrão da Transformação Divisão Condicional"
+                      exclusionGroup="1"
+                      name="Saída Padrão de Divisão Condicional"
+                      synchronousInputId="Package\Iterar com os arquivos disponíveis\Transferir Dados\Divisão Condicional.Inputs[Entrada de Divisão Condicional]">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          name="IsDefaultOut">true</property>
+                      </properties>
+                      <externalMetadataColumns />
+                    </output>
+                    <output
+                      refId="Package\Iterar com os arquivos disponíveis\Transferir Dados\Divisão Condicional.Outputs[Saída de Erro de Divisão Condicional]"
+                      description="Saída de Erro da Transformação Divisão Condicional"
+                      exclusionGroup="1"
+                      isErrorOut="true"
+                      name="Saída de Erro de Divisão Condicional"
+                      synchronousInputId="Package\Iterar com os arquivos disponíveis\Transferir Dados\Divisão Condicional.Inputs[Entrada de Divisão Condicional]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Iterar com os arquivos disponíveis\Transferir Dados\Divisão Condicional.Outputs[Saída de Erro de Divisão Condicional].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Iterar com os arquivos disponíveis\Transferir Dados\Divisão Condicional.Outputs[Saída de Erro de Divisão Condicional].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Iterar com os arquivos disponíveis\Transferir Dados\Divisão Condicional.Outputs[Saída de Erro de Divisão Condicional].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Iterar com os arquivos disponíveis\Transferir Dados\Divisão Condicional.Outputs[Saída de Erro de Divisão Condicional].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\Iterar com os arquivos disponíveis\Transferir Dados\Multicast"
+                  componentClassID="Microsoft.Multicast"
+                  contactInfo="Multicast;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos os Direitos Reservados; http://www.microsoft.com/sql/support;0"
+                  description="Distribui cada linha de entrada em cada linha em uma ou mais saídas. Por exemplo, ramifique seu fluxo de dados para criar uma cópia de dados de forma que alguns valores possam ser mascarados antes do compartilhamento com parceiros externos."
+                  name="Multicast">
+                  <inputs>
+                    <input
+                      refId="Package\Iterar com os arquivos disponíveis\Transferir Dados\Multicast.Inputs[Multicast Entrada 1]"
+                      name="Multicast Entrada 1">
+                      <externalMetadataColumns />
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\Iterar com os arquivos disponíveis\Transferir Dados\Multicast.Outputs[Multicast Saída 1]"
+                      deleteOutputOnPathDetached="true"
+                      name="Multicast Saída 1"
+                      synchronousInputId="Package\Iterar com os arquivos disponíveis\Transferir Dados\Multicast.Inputs[Multicast Entrada 1]">
+                      <externalMetadataColumns />
+                    </output>
+                    <output
+                      refId="Package\Iterar com os arquivos disponíveis\Transferir Dados\Multicast.Outputs[1 de Saída Multicast]"
+                      deleteOutputOnPathDetached="true"
+                      name="1 de Saída Multicast"
+                      synchronousInputId="Package\Iterar com os arquivos disponíveis\Transferir Dados\Multicast.Inputs[Multicast Entrada 1]">
+                      <externalMetadataColumns />
+                    </output>
+                    <output
+                      refId="Package\Iterar com os arquivos disponíveis\Transferir Dados\Multicast.Outputs[2 de Saída Multicast]"
+                      dangling="true"
+                      deleteOutputOnPathDetached="true"
+                      name="2 de Saída Multicast"
+                      synchronousInputId="Package\Iterar com os arquivos disponíveis\Transferir Dados\Multicast.Inputs[Multicast Entrada 1]">
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+              </components>
+              <paths>
+                <path
+                  refId="Package\Iterar com os arquivos disponíveis\Transferir Dados.Paths[1 de Saída Multicast]"
+                  endId="Package\Iterar com os arquivos disponíveis\Transferir Dados\Coluna Derivada.Inputs[Entrada de Coluna Derivada]"
+                  name="1 de Saída Multicast"
+                  startId="Package\Iterar com os arquivos disponíveis\Transferir Dados\Multicast.Outputs[1 de Saída Multicast]" />
+                <path
+                  refId="Package\Iterar com os arquivos disponíveis\Transferir Dados.Paths[Classificar Saída]"
+                  endId="Package\Iterar com os arquivos disponíveis\Transferir Dados\Multicast.Inputs[Multicast Entrada 1]"
+                  name="Classificar Saída"
+                  startId="Package\Iterar com os arquivos disponíveis\Transferir Dados\Classificar.Outputs[Classificar Saída]" />
+                <path
+                  refId="Package\Iterar com os arquivos disponíveis\Transferir Dados.Paths[EliminarBranco]"
+                  endId="Package\Iterar com os arquivos disponíveis\Transferir Dados\Classificar.Inputs[Classificar Entrada]"
+                  name="EliminarBranco"
+                  startId="Package\Iterar com os arquivos disponíveis\Transferir Dados\Divisão Condicional.Outputs[EliminarBranco]" />
+                <path
+                  refId="Package\Iterar com os arquivos disponíveis\Transferir Dados.Paths[Multicast Saída 1]"
+                  endId="Package\Iterar com os arquivos disponíveis\Transferir Dados\Contagem de Linhas.Inputs[Contagem de Linhas Entrada 1]"
+                  name="Multicast Saída 1"
+                  startId="Package\Iterar com os arquivos disponíveis\Transferir Dados\Multicast.Outputs[Multicast Saída 1]" />
+                <path
+                  refId="Package\Iterar com os arquivos disponíveis\Transferir Dados.Paths[Saída de Coluna Derivada]"
+                  endId="Package\Iterar com os arquivos disponíveis\Transferir Dados\Destino Banco de Dados.Inputs[Entrada de Destino OLE DB]"
+                  name="Saída de Coluna Derivada"
+                  startId="Package\Iterar com os arquivos disponíveis\Transferir Dados\Coluna Derivada.Outputs[Saída de Coluna Derivada]" />
+                <path
+                  refId="Package\Iterar com os arquivos disponíveis\Transferir Dados.Paths[Saída de Origem de Arquivo Simples]"
+                  endId="Package\Iterar com os arquivos disponíveis\Transferir Dados\Divisão Condicional.Inputs[Entrada de Divisão Condicional]"
+                  name="Saída de Origem de Arquivo Simples"
+                  startId="Package\Iterar com os arquivos disponíveis\Transferir Dados\DATASET.Outputs[Saída de Origem de Arquivo Simples]" />
+              </paths>
+            </pipeline>
+          </DTS:ObjectData>
+        </DTS:Executable>
+      </DTS:Executables>
+      <DTS:ForEachVariableMappings>
+        <DTS:ForEachVariableMapping
+          DTS:CreationName=""
+          DTS:DTSID="{624862AD-E6B1-4CAB-874A-AE4F9AC7E372}"
+          DTS:ObjectName="{624862AD-E6B1-4CAB-874A-AE4F9AC7E372}"
+          DTS:ValueIndex="0"
+          DTS:VariableName="User::FilePath" />
+      </DTS:ForEachVariableMappings>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--Esta seção CDATA contém as informações de layout do pacote. A seção inclui informações como coordenadas (x,y), largura e altura.-->
+<!--Se você editar manualmente esta seção e cometer algum erro, poderá excluí-la. -->
+<!--O pacote ainda poderá ser carregado normalmente, mas as informações de layout anteriores serão perdidas e o designer reorganizará automaticamente os elementos na superfície de design.-->
+<Objects
+  Version="8">
+  <!--Cada nó abaixo conterá propriedades que não afetam o comportamento em tempo de execução.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="161,42"
+          Id="Package\Iterar com os arquivos disponíveis\Transferir Dados"
+          TopLeft="5.5,5.5" />
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="172,102"
+          Size="268,145"
+          Id="Package\Iterar com os arquivos disponíveis"
+          TopLeft="226,97" />
+        <AnnotationLayout
+          Text="Adicionamos o componente LOOP FOREACH para abrir e ler cada arquivo disponibilizado na pasta. &#xD;&#xA;O componente é configurado a passando o caminho do arquivo, &#xD;&#xA;e o seu retorno irá montar a String Connection&#xD;&#xA;dos arquivos CSV, na expression é fornecido o valor da variavel FILEPATH para a propriedade &#xD;&#xA;ConnectioString"
+          ParentId="Package"
+          FontInfo="{assembly:Null}"
+          Size="556,104"
+          Id="0bcc3ff9-d9b6-4271-85a6-d09cf235f313"
+          TopLeft="498,138" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Iterar com os arquivos disponíveis\Transferir Dados">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="130,42"
+          Id="Package\Iterar com os arquivos disponíveis\Transferir Dados\DATASET"
+          TopLeft="45,48" />
+        <AnnotationLayout
+          Text="Conectamos a origem dos dados. "
+          ParentId="Package\Iterar com os arquivos disponíveis\Transferir Dados"
+          FontInfo="{assembly:Null}"
+          Size="209,60"
+          Id="25fcdd55-f30c-4290-bb67-70c557ad4455"
+          TopLeft="33,19" />
+        <NodeLayout
+          Size="176,42"
+          Id="Package\Iterar com os arquivos disponíveis\Transferir Dados\Divisão Condicional"
+          TopLeft="166,116" />
+        <AnnotationLayout
+          Text="Adicionar a divisão &#xD;&#xA;condicional para eliminar os valores brancos&#xD;&#xA;"
+          ParentId="Package\Iterar com os arquivos disponíveis\Transferir Dados"
+          FontInfo="{assembly:Null}"
+          Size="263,72"
+          Id="cf301cb0-6a16-4c79-95dc-184005158370"
+          TopLeft="334,110" />
+        <EdgeLayout
+          Id="Package\Iterar com os arquivos disponíveis\Transferir Dados.Paths[Saída de Origem de Arquivo Simples]"
+          TopLeft="110,90">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="144,26"
+              Start="0,0"
+              End="144,18.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,9" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,9"
+                    Point2="0,13"
+                    Point3="4,13" />
+                  <mssgle:LineSegment
+                    End="140,13" />
+                  <mssgle:CubicBezierSegment
+                    Point1="140,13"
+                    Point2="144,13"
+                    Point3="144,17" />
+                  <mssgle:LineSegment
+                    End="144,18.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="130,42"
+          Id="Package\Iterar com os arquivos disponíveis\Transferir Dados\Classificar"
+          TopLeft="240,201" />
+        <EdgeLayout
+          Id="Package\Iterar com os arquivos disponíveis\Transferir Dados.Paths[EliminarBranco]"
+          TopLeft="254,158">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="51,43"
+              Start="0,0"
+              End="51,35.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,17.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,17.5"
+                    Point2="0,21.5"
+                    Point3="4,21.5" />
+                  <mssgle:LineSegment
+                    End="47,21.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="47,21.5"
+                    Point2="51,21.5"
+                    Point3="51,25.5" />
+                  <mssgle:LineSegment
+                    End="51,35.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-7.82703125,26.5,66.6540625,9.7490234375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <AnnotationLayout
+          Text="Adicionamos a classificação para &#xD;&#xA;ordenar e eliminar duplicados caso exista.&#xD;&#xA;E também podemos eliminar as colunas que &#xD;&#xA;não serão utilizadas desmarcando a opção &quot;PASSAGEM&quot;"
+          ParentId="Package\Iterar com os arquivos disponíveis\Transferir Dados"
+          FontInfo="{assembly:Null}"
+          Size="326,88"
+          Id="0b1da2b0-3c52-4f62-9403-248188c51737"
+          TopLeft="0,196" />
+        <NodeLayout
+          Size="180,42"
+          Id="Package\Iterar com os arquivos disponíveis\Transferir Dados\Contagem de Linhas"
+          TopLeft="87,318" />
+        <AnnotationLayout
+          Text="Utilizamos a contagem de linhas para fins &#xD;&#xA;de auditoria e logs para verificar a quantidade de linhas &#xD;&#xA;afetadas no processo.&#xD;&#xA;"
+          ParentId="Package\Iterar com os arquivos disponíveis\Transferir Dados"
+          FontInfo="{assembly:Null}"
+          Size="326,88"
+          Id="7d6afee1-7a90-4f0e-a07f-fee8bf006e21"
+          TopLeft="256,301" />
+        <NodeLayout
+          Size="123,42"
+          Id="Package\Iterar com os arquivos disponíveis\Transferir Dados\Multicast"
+          TopLeft="425,202" />
+        <EdgeLayout
+          Id="Package\Iterar com os arquivos disponíveis\Transferir Dados.Paths[Classificar Saída]"
+          TopLeft="370,222.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="55,0"
+              Start="0,0"
+              End="47.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="47.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Iterar com os arquivos disponíveis\Transferir Dados.Paths[Multicast Saída 1]"
+          TopLeft="486.5,244">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-309.5,74"
+              Start="0,0"
+              End="-309.5,66.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,33" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,33"
+                    Point2="0,37"
+                    Point3="-4,37" />
+                  <mssgle:LineSegment
+                    End="-305.5,37" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-305.5,37"
+                    Point2="-309.5,37"
+                    Point3="-309.5,41" />
+                  <mssgle:LineSegment
+                    End="-309.5,66.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <AnnotationLayout
+          Text="A ferramenta Multicast redireciona as linhas para mais de um destino, &#xD;&#xA;não há tratamento. &#xD;&#xA;Nesse caso para não atrasar o processo, iremos redirecionar as linhas &#xD;&#xA;para contagem e para a proxima etapa de transformação"
+          ParentId="Package\Iterar com os arquivos disponíveis\Transferir Dados"
+          FontInfo="{assembly:Null}"
+          Size="400,88"
+          Id="3d28abcf-6faa-45be-bb1a-9ea2f07854f2"
+          TopLeft="539,175" />
+        <NodeLayout
+          Size="161,42"
+          Id="Package\Iterar com os arquivos disponíveis\Transferir Dados\Coluna Derivada"
+          TopLeft="581,318" />
+        <EdgeLayout
+          Id="Package\Iterar com os arquivos disponíveis\Transferir Dados.Paths[1 de Saída Multicast]"
+          TopLeft="505.666666666667,244">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="155.833333333333,74"
+              Start="0,0"
+              End="155.833333333333,66.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,26.1701444622793" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,26.1701444622793"
+                    Point2="0,30.1701444622793"
+                    Point3="4,30.1701444622793" />
+                  <mssgle:LineSegment
+                    End="151.833333333333,30.1701444622793" />
+                  <mssgle:CubicBezierSegment
+                    Point1="151.833333333333,30.1701444622793"
+                    Point2="155.833333333333,30.1701444622793"
+                    Point3="155.833333333333,34.1701444622793" />
+                  <mssgle:LineSegment
+                    End="155.833333333333,66.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <AnnotationLayout
+          Text="O componente de Coluna Derivada nos  permite criar novas colunas a partir de expressões &#xD;&#xA;manipulando as colunas de origem, convertendo dados e a partir de variáveis."
+          ParentId="Package\Iterar com os arquivos disponíveis\Transferir Dados"
+          FontInfo="{assembly:Null}"
+          Size="511,60"
+          Id="bf933bc9-81b5-4b1d-b2f5-a348adb0f8a7"
+          TopLeft="735,308" />
+        <NodeLayout
+          Size="200,42"
+          Id="Package\Iterar com os arquivos disponíveis\Transferir Dados\Destino Banco de Dados"
+          TopLeft="571,423" />
+        <EdgeLayout
+          Id="Package\Iterar com os arquivos disponíveis\Transferir Dados.Paths[Saída de Coluna Derivada]"
+          TopLeft="661.5,360">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="9.5,63"
+              Start="0,0"
+              End="9.5,55.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,27.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,27.5"
+                    Point2="0,31.5"
+                    Point3="4,31.5" />
+                  <mssgle:LineSegment
+                    End="5.5,31.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="5.5,31.5"
+                    Point2="9.5,31.5"
+                    Point3="9.5,35.5" />
+                  <mssgle:LineSegment
+                    End="9.5,55.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Iterar com os arquivos disponíveis\Transferir Dados\Destino Banco de Dados">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
