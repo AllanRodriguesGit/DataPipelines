@@ -1,16 +1,14 @@
 # DataPipelines
 Creating some DataPipelines projects (ETL, ELT, BigData) and different tools and languages. 
 
-## For the project MUSIC_ETL please create your database environent using the script below
---Criação do banco de dados <br/>
+## For the project MUSIC_ETL please create your database environent using the script below.
+-- I am using SQL SERVER DATABASE.
 CREATE DATABASE Music_ETL <br/>
 GO <br/>
 
---Usando o banco de dados <br/>
 USE Music_ETL <br/>
 GO <br/>
 
---Criando a tabela para armazenar os dados do arquivo. <br/>
 CREATE TABLE dbo.SessionHistory <br/>
 ( <br/>
   ID           BIGINT IDENTITY(1,1) <br/>
